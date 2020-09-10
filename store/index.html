@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+
+  <link rel="stylesheet" href="./public/css/bootstrap.min.css" >
+   <link rel="stylesheet" href="./public/css/jquery-ui.css">
+<!-- 
+<link  href="./css/fotorama.css" rel="stylesheet"> -->
+
+<link rel="stylesheet" href="./public/css/open-iconic-bootstrap.min.css"/>
+
+
+
+  <style>
+  #sortable { list-style-type: none; margin: 0; padding: 0; }
+  #sortable li { cursor:move; margin: 10px 10px 10px 0; padding: 1px; float: left; font-size: 4em; text-align: center; }
+ 
+  /*youtube*/
+  .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+  }
+
+  .video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*jquery validate error messages*/
+  label.error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+  }
+  </style>
+</head>
+<body>
+
+<div id="product_edit"></div>
+
+<script src="./public/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+<body>
+<div id="doc_here"></div>
+<script>
+    $(document).ready(function(){
+
+        var hostname = 'https://' + window.location.hostname + '/';
+
+        var hash = window.location.hash.substring(1).match(/([^=]+)=([^&]+)/);
+
+        if( typeof hash[2] == 'undefined' ){
+
+            return;
+        }
+
+        var type = hash[2];
+
+        if( hash[1] != 'type' ){
+
+            return;
+        }
+
+        var get_doc_folder = function(type){
+
+            if( type == 'service_term' 
+                || type == 'privacy_term' 
+                || type == 'cookie_term' 
+                || type == 'point_use_term' 
+                || type == 'floors_add_service_term' 
+                || type == 'send_news_service_term' 
+                || type == 'ad_point_service_term' 
+                || type == 'lottery_activity_manage_term' 
+                || type == 'lottery_activity_join_term' 
+                || type == 'post_ban_term' 
+                || type == 'i8love_coin_use_term' 
+            ){
+                var folder = 'term';
+
+            }else if( type == 'common_qa' 
+                || type == 'how_post_activity' 
+                || type == 'how_manage_activity' 
+                || type == 'how_post_ad' 
+                || type == 'how_send_news' 
+                || type == 'how_add_floor' 
+                || type == 'how_install_app' 
+                || type == 'how_earn_flow_award' 
+                || type == 'how_share_checkin' 
+                || type == 'i8love_coin_qa' 
+                || type == 'how_earn_passive_income' 
+            ){
+                var folder = 'manual';
+            }
+
+            return folder;
+        }; 
+
+        var folder = get_doc_folder(type);
+
+        jQuery.ajax({
+            url: hostname + 'public/'+ folder +'/'+ type +'.html',
+            dataType: 'html',
+            success: function(content){
+                
+                $('#doc_here').html(content);
+
+                $('a#web_format_link').hide();
+
+                // img hack
+                $('img').parent().append('<div class="img_hack"></div>');
+
+                $('img').each(function(){
+
+                    var img = $(this).attr('src').replace(/\.\//gi, hostname);
+
+                    $(this).parent().children(".img_hack").append('<img src="'+ img +'" />');
+
+                    $(this).remove();
+                });
+
+                // link hack
+                $('a.link_term').each(function(){
+
+                    var type = $(this).prop('id');
+
+                    $(this).attr('href', hostname +'public/web_format_doc.html#type='+ type);
+                    $(this).attr('target', '_blank');
+                });
+            },
+            async: false
+        });
+    });
+</script>
+</body>
+</html>

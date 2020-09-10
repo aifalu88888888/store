@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+<body>
+
+
+<script>
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,    
+    function(m,key,value) {
+      vars[key] = value;
+    });
+    return vars;
+}
+
+$(document).ready(function(){
+
+    window.fbAsyncInit = function() {
+            
+        FB.init({
+          appId      : '439163893904886',
+          cookie     : true,  // enable cookies to allow the server to access 
+                              // the session
+          xfbml      : false,  // parse social plugins on this page
+          version    : 'v2.8' // use graph api version 2.8
+        });
+
+        
+        if( typeof getUrlVars()["access_token"] == 'undefined' ){
+
+            return false;
+        }
+
+        var pageAccessToken = getUrlVars()["access_token"];
+        
+        FB.api('/me', {
+            fields: 'id, name, email',
+            access_token : pageAccessToken
+
+        }, function(response) {
+
+            var state = 'authorized ';
+
+            // not authorized
+            if(typeof response.email == "undefined"){
+
+                state += 'email fail';
+
+                pageAccessToken = 'fb_authorized_fail';
+
+            }else{                                
+
+                state = 'ok';
+            }
+
+            // var cors_data = JSON.stringify({
+            //     fb_token : pageAccessToken
+            // });
+
+            if( typeof window.name != 'undefined' ) {
+        
+                try {
+
+                    var cors_data = JSON.parse(window.name);
+
+                } catch(e) {
+
+                    var cors_data = {};
+                }
+            } 
+
+            cors_data['fb_token'] = pageAccessToken;
+
+            window.name = JSON.stringify(cors_data);
+            
+
+            var site = 'https://i8love.tw/';
+
+            if( state != 'ok' ){
+
+                var r = confirm( state );
+
+                if (r == true || r == false) {
+
+                    window.location = site;
+                }
+
+            }else{
+
+                window.location = site;
+            }
+        });
+    };
+
+
+    // Load the SDK asynchronously
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+});
+</script>
+</body>
+</html>

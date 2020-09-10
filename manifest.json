@@ -1,0 +1,14 @@
+{
+  "name": "i8love",
+  "short_name": "i8love",
+  "description": "i8love",
+  "icons": [
+    {
+      "src": "./public/icon/app_icon_init.png",
+      "sizes": "330x330",
+      "type": "image/png"
+    }
+  ],
+"start_url": "https://i8love.tw",
+"display": "standalone"
+}
