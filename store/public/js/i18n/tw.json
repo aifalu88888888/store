@@ -1,0 +1,117 @@
+  {
+  "msg_required"                   : "此欄位必填",
+  "msg_number"                     : "必須為數字",
+  "msg_maxlength"                  : "字數最多 {0} 個",
+  "msg_rangelength"                : "字數必須介於 {0} ~ {1} ",
+  "msg_filesize"                   : "檔案必須小於 {0} KB",
+  "msg_url"                        : "必須為正確網址格式",
+  "msg_email"                      : "必須為正確email格式",
+  "msg_digits"                     : "必須為整數",
+  "msg_range"                      : "數字必須介於 {0} ~ {1} ",
+  "msg_min"                        : "數字不能小於 {0}",
+  "msg_max"                        : "數字不能大於 {0}",
+  "msg_bigger_than"                : "數字必須大於 ",
+  "msg_equal_pwd"                  : "必須與密碼相同",
+  "msg_limit_char"                 : "不允許的字元",
+  "msg_legal_char"                 : "不允許的字元",
+  "msg_alpha_num"                  : "不允許的字元",
+  "msg_address_style"              : "只能包括-、括號、中文、英文、數字",
+  "msg_user_name"                  : "只能包括-、中文字、英文字母",
+  "msg_is_phone"                   : "手機號碼不符合格式，僅允許09開頭的10碼數字",
+  "msg_phone_style"                : "電話號碼不符合格式，僅接受數字#-等符號",
+  "msg_real_date"                  : "必須為yyyy/mm/dd格式的正確日期",
+  "msg_date_bigger_today"          : "必須大於今天的日期",
+  "msg_bigger_start_dt"            : "必須大於開始的日期時間",
+  "msg_not_equal_old_pwd"          : "新舊密碼必須不一樣",
+  "msg_legal_checksum"             : "格式錯誤",
+  
+  "activity_details_limit"         : "活動詳情及限制 等參加應注意事項",
+  "add_floor_fail"                 : "新增樓層失敗",
+  "allow_edit_count"               : "允許編輯次數: ",
+  "already_1000"                   : "已達上限1000",
+  
+  "cancel"                         : "取消",
+  "checkin_all_winner"             : "簽到者人人有獎",
+  "checkin_notice"                 : "開放簽到名額共 {0} 位，平均每 {1} 位簽到的人，就有 1 位可以把商品免費帶回家",
+  "common_rule"                    : "*活動期間*&#13;&#10; 活動商品上架 至 簽到開放名額滿額為止，開放名額：{0}&#13;&#10; &#13;&#10; *活動方式*&#13;&#10; 活動期間內，對本項商品完成簽到追蹤步驟即符合參加抽獎資格!&#13;&#10; 簽到額滿後，會由系統平台自動抽出本項商品之得獎者，個別發送中獎通知，預計抽出人數：{1}&#13;&#10; &#13;&#10; *領獎方式*{2}{3}",
+  "count_limit_when_postage_notice" : "因為您設定收取運費，所以贈送數量不能超過 20 個，請重新設定贈送數量",
+
+  "data_format_error"              : "資料填寫有誤",
+  "del_youtube"                    : "刪除youtube影片",
+  "disable_checkin_all_winner_ask" : "確定停用簽到者人人有獎模式?",
+
+  
+  "edit_product"                   : "編輯商品",
+  "embed_youtube"                  : "嵌入youtube影片",
+  "enable_checkin_all_winner"      : "啟用「簽到者人人有獎」模式",
+  "enable_checkin_all_winner_fail" : "啟用無效 : 商品贈送數量 10 以上才能啟用",
+  "enable_checkin_all_winner_note" : "即將從「抽獎」模式改為「人人有獎」模式\r\n\r\n注意! 樓層數將被強制設定與商品贈送數量相同，確定更改?",
+
+  "error_occur"                    : "發生未知錯誤，請聯絡系統管理員或稍後再試",
+  "error_occur_report_ask"         : "好像出錯了，是否回報問題?",
+  
+  
+  "floor"                          : "樓層 (簽到開放名額)",
+  "floor_add_notice"               : "請注意樓層總數如果超過1000，以1000樓計，已儲值的樓層數以及超過的樓層數概不予退還",
+  "floor_notice_2_1"               : "樓層=商品數量X10 + 票券增加樓層",
+  "floor_notice_2_2"               : "先前已加樓層",
+  
+  "how_to_get"                     : "如何取得",
+
+  "img_upload"                     : "圖片上傳",
+  "img_upload_notice"              : "將圖片拖曳排序(僅支援網頁版)，首張為封面；每個商品最多可以上傳 10 張照片",
+  "img_upload_over_10"             : "圖片上傳超過 10 張",
+  "invalid_product"                : "無效的商品，請聯絡系統管理員",
+  
+  "leave_msg_example"              : "以下為留言參考範本，請依據您的辦理需求自行增減或更改 XXX 欄位並刪除此行說明&#13;&#10;&#13;&#10; *非常感謝您參加本活動，恭喜您中獎!&#13;&#10;&#13;&#10; *如果您選擇到店兌獎，地址位於 XXX ，請在 XXX 期間內到店時出示「我的訂單」內的兌獎序號或是兌獎QRCODE，會由專人為您處理。&#13;&#10;&#13;&#10; *如果您選擇寄送方式兌獎，請在 XXX 期間內，將運費匯款到 XXX，並在問與答中告知您的匯款資料，會由專人為您處理。&#13;&#10;&#13;&#10; *如果您選擇寄送方式兌獎，請在 XXX 期間內，在蝦皮拍賣點選 XXX 商品，並在聊聊中告知您的兌獎序號，會由專人開新的賣場給您下標，為您處理。&#13;&#10;&#13;&#10; *其他注意事項: &#13;&#10; 如有問題請洽問與答、LINE或 FB粉絲專頁 XXX 客服專線: XXX &#13;&#10;",
+  "leave_msg_error_notice"         : "中獎者留言有誤，請再次確認內容",
+  "leave_msg_to_winner"            : "給中獎者的留言",
+  "leave_msg_to_winner_notice"     : "設定留言給所有的中獎者，只有中獎者才會收到這則訊息",
+  "loading"                        : "讀取中...",
+  
+  "make_sure_ask"                  : "確定?",
+
+  "no_select"                      : "未選取",
+  "no_setting"                     : "不設定",
+  "no_tickets"                     : "沒有樓層券",
+  "not_required"                   : "(非必填)",
+  "nothing_changed"                : "未作任何改變",
+  
+  "permission_changed"             : "權限被修改，請稍後再試",
+  "postage_limit_notice"           : "小提醒: 收取運費不能超過單個贈送物價值的30% : {0} 元",
+  "product_actual_price"           : "商品原定售價",
+  "product_actual_price_notice"    : "在首頁會顯示為 0 元",
+  "product_add_success"            : "商品新增成功",
+  "product_desc"                   : "商品詳情 及 贈品相關資訊",
+  "product_desc_addition"          : "商品敘述補充",
+
+  "product_info"                   : "商品資料",
+  "product_name"                   : "商品名稱",
+  "product_give_count"             : "商品贈送數量 (預計抽出人數)",
+  "product_target"                 : "商品主打目標族群",
+  "product_target_notice"          : "為您的商品設定主要客群，系統會優先顯示給相關性較高的使用者",
+  "product_updated_success"        : "商品更新成功",
+  "promotion_term"                 : "活動辦法",
+  
+  "recaptcha_not_verified"         : "驗證碼錯誤",
+  "report_bug"                     : "回報問題",
+  "reward_method"                  : "兌獎方式",
+  "reward_method_in_store"         : "自取 (來店領取/面交)",
+  "reward_method_in_store_ship"    : "自取、寄送皆可",
+  "reward_method_ship"             : "寄送",
+  "reward_method_ship_info"        : "寄送 (得獎者須付運費 ${0})",
+  "rule_addition"                  : "活動規則補充",
+  "rule_example"                   : "以下為活動規則參考範本，請依據您的辦理需求自行增減或更改 XXX 欄位並刪除此行說明&#13;&#10;&#13;&#10; *活動限制*&#13;&#10; 1.  請務必加入LINE「XXX」帳號好友並未封鎖以利活動相關資訊發送。&#13;&#10; 2.  參加者僅限「目前居住於台灣地區」之用戶。&#13;&#10;&#13;&#10; *發送規則*&#13;&#10; 1. 獎項將於活動結束後 XXX 日內發放完畢，逾期未領者取消領獎資格。&#13;&#10; 2. 本活動之獎項為無償發送，不得要求兌換為等值的商品或現金。&#13;&#10; 3. 本活動之獎項除重大瑕疵，不得要求進行退換貨。&#13;&#10;&#13;&#10; *領獎事宜*&#13;&#10; 1.  請於系統通知您中獎後參照「給中獎者的訊息」內容，依步驟領取。&#13;&#10; 2.  如有問題請洽問與答、LINE或 FB粉絲專頁 XXX 或 客服專線: XXX&#13;&#10;&#13;&#10; *其他注意事項: XXX...如無請刪除此行",
+  "rule_error_notice"              : "活動規則有誤，請再次確認內容",
+
+
+  "save_temp"                      : "暫存",
+  "set_cover"                      : "設為活動封面",
+  "ship_edit_notice"               : "收取運費可能會降低活動參加意願及行銷效果，確定繼續?",
+  "shipping_fee"                   : "得獎者須付運費",
+  "store_manager_editing_same_time": "商店其他管理員也在修改此商品，請稍後再試",
+
+  "uploading"                      : "上傳中...",
+
+  "youtube_url_place_notice"       : "請將網址貼在這裡，然後按下嵌入影片"
+  }
